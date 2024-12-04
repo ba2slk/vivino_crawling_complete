@@ -38,6 +38,7 @@ def load_and_scrape(driver, user_name, pause_time=2):
                 try:
                     # 와인 이름
                     wine_name = wine_card.find_element(By.XPATH, ".//p[@class='wine-name header-medium']/a").text.strip()
+                    wine_name = 
                     
                     # 사용자 평가 점수 (별의 갯수)
                     user_rating_stars = wine_card.find_elements(By.XPATH, ".//span[@class='rating rating-xs text-inline-block']/i[contains(@class, 'icon-100-pct')]")
